@@ -10,3 +10,22 @@ body {
     justify-content: center;
     height: 100vh;
 }
+
+.container {
+    display: flex;
+    width: 90vw;
+ 
+}
+
+.panel {
+   background-size: auto 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 80vh;
+   cursor: pointer;
+   color: #fff;
+   position: relative;
+   flex: 0.5;
+   margin: 10px;
+   border-radius: 50px;
+}
