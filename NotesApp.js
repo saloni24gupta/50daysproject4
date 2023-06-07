@@ -21,4 +21,25 @@ function addNewNote(text = '') {
 <div class="main ${text ? "" : "hidden"}"></div>
     <textarea class="${text ? "hidden" : ""}"></textarea>
 `
+
+const editBtn = document.querySelector('.edit')
+const deleteBtn = document.querySelector('.delete')
+const main = document.querySelector('.main')
+const textarea = document.querySelector('.textarea')
+
+
+deleteBtn.addEventListener('click', () => {
+    note.remove()
+})
+editBtn.addEventListener('click', () => {
+    main.classList.toggle('hidden')
+    textarea.classList.toggle('hidden')
+})
+
+
+
+document.body.appendChild(note)
+
+
+
 }
