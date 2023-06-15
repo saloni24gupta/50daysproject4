@@ -39,7 +39,14 @@ editBtn.addEventListener('click', () => {
 
 
 document.body.appendChild(note)
+}
 
+localStorage.setItem('name', 'Saloni')
+localStorage.getItem('name')
 
-
+function updateLS() {
+    const notesText = document.querySelectorAll('textarea')
+    const notes = []
+    notesText.forEach(note => notes.push(note.value))
+    console.log(notes)
 }
