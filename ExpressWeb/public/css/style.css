@@ -1,0 +1,8 @@
+h1 {
+    color: red;
+}
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
