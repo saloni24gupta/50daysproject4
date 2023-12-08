@@ -10,19 +10,30 @@ app.use(express.json())
 app.post("/mens", async(req, res) => {
     try{
         const addingMensRecords = new MensRanking(req.body);
-console.log(req.body)
-        addingMensRecords.save();
-    }catch(e){
-      res.send(e);
+console.log(req.body);
+const insertMens = await addingMensRecords.save();
+res.status(201).send(insertMens)  ;
+
+}catch(e){
+      res.status(400).send(e);
     }
     
   
 })
 
+app.get("/mens", async(req, res) => {
+    try{
 
-app.get("/", async(req, res) => {
-    res.send ("hello from me");
+        const getMens = await MensRanking.find({});
+       res.status(201).send(getMens)  ;
+
+}catch(e){
+      res.status(400).send(e);
+    }
+    
+  
 })
+
 
 app.listen(PORT,() => {
     console.log(`connection is live at port no ${PORT} `)
