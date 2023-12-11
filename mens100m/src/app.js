@@ -4,10 +4,15 @@ require("../src/db/conn")
 const MensRanking = require("../src/models/mens")
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
 
 app.use(express.json())
+
+app.get("/", (req, res) => {
+    res.send("hello from this sie");
+})
 // we will handle post request
+
 
 app.use(router);
 app.listen(PORT,() => {
