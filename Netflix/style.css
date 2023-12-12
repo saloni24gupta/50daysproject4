@@ -137,6 +137,13 @@ nav button {
     gap: 16px;
 }
 
+.firsec {
+    display: flex;
+    height: 80vh;
+    display: flex;
+    max-width: 78vw;
+}
+
 .first-sec {
     display: flex;
     justify-content: center; 
@@ -194,4 +201,71 @@ font-size: 24px;
 
 .secImg2 {
     position: relative;
+    /* height: 172vh; */
 } 
+
+.secImg2 img {
+    z-index: 10;
+    width: 55vw;
+}
+
+.secImg2 video {
+    position: absolute;
+    top: 42px;
+    right: 138px;
+    z-index: -1;
+}
+
+.sec {
+    height: 90vh;
+}
+
+.secImg3 img {
+  height: 400px;
+  width: 500px;
+}
+
+.first-sec  {
+    height: 80vh;
+    display: flex;
+    max-width: 60vw;;
+}
+.four-sec {
+   height: 80vh;
+   color: white;
+}
+
+/* faq */
+
+.faq .cancel{
+    display: flex;
+    height: 30px;
+    width: 30px;
+}
+.faq .plus{
+    display: flex;
+    height: 30px;
+    width: 30px;
+}
+.faq .corner {
+    position: relative;   
+border: 1px solid white;
+margin: 20px;
+background-color: rgb(43, 40, 40);
+}
+
+.faq .corner  h1 {
+font-weight: 400;
+font-size: 24px;;
+}
+.btn-1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.faq .hidden{
+    display: flex;
+    visibility: hidden;
+}
+
