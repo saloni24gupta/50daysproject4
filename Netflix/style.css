@@ -105,6 +105,7 @@ nav button {
 
 
 .red-btn {
+    font-family: serif;
     background-color: red;
     color: white;
     padding: 3px 24px;
@@ -135,3 +136,62 @@ nav button {
     justify-content: center;
     gap: 16px;
 }
+
+.first-sec {
+    display: flex;
+    justify-content: center; 
+     max-width: 92vw;
+     height: 85vh;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+
+.secImg {
+   position: relative;
+   z-index: 10;
+}
+
+.secImg img {
+    width: 48vw;
+}
+
+.secImg video {
+    position: absolute;
+    top: 101px;
+    right: 91px;
+}
+
+.paragraph {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.heading {
+font-size: 48px;
+font-weight: bolder;
+}
+
+.para {
+font-size: 24px;
+}
+
+.paragraph1 {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.secImg1 {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.secImg2 {
+    position: relative;
+} 
