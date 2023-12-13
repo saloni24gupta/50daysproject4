@@ -16,16 +16,21 @@
 
     <title>Netflix India - Watch TV Shows online, atch movies</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        const toggles = document.querySelectorAll('.faq-toggle')
 
-        toggles.forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                console.log("clickd");
-                // toggle.parentElement.classList.toggle('active')
-            })
+
+    <script>
+      console.log("hello world");
+      const toggles = document.querySelectorAll(".faq-toggle");
+      console.log(toggles);
+      toggles.forEach(toggle => {
+        console.log(toggle);
+        toggle.addEventListener('click', () => {
+            console.log("clicked")
         })
+      })
     </script>
+
+
 </head>
 
 <body>
@@ -222,7 +227,7 @@
         </div>
     </div>
     </main>
-
+<!-- <script src="indexc.js"></script> -->
 </body>
 
 </html>
