@@ -236,36 +236,94 @@ font-size: 24px;
 }
 
 /* faq */
-
-.faq .cancel{
-    display: flex;
-    height: 30px;
-    width: 30px;
-}
-.faq .plus{
-    display: flex;
-    height: 30px;
-    width: 30px;
-}
-.faq .corner {
-    position: relative;   
-border: 1px solid white;
-margin: 20px;
-background-color: rgb(43, 40, 40);
+.header {
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
 }
 
-.faq .corner  h1 {
-font-weight: 400;
-font-size: 24px;;
+.faq-container {
+    max-width: 70vw;
+    margin: auto;
+    color: white;
 }
-.btn-1 {
+
+.faq {
+    border: 1px solid white; 
+    border-radius: 10px ;
+    margin: 20px 0px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+    background-color: rgb(66, 65, 62);
+}
+
+.faq.active {
+    background-color: rgb(107, 105, 100);
+}
+
+
+
+.faq-title {
+ margin: 0 35px 0 0;
+}
+
+.faq-text {
+    display: none;
+    margin: 30px 0 0;
+}
+
+.faq.active .faq-text {
+    display: block;
+   
+}
+.faq-toggle:focus {
+    outline: 0;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: 32px;
+    padding: 0;
     position: absolute;
-    right: 0;
-    top: 0;
+    top: 17px;
+    right: 30px;
+    width: 40px;
 }
 
-.faq .hidden{
-    display: flex;
-    visibility: hidden;
+.faq-toggle .fa-times {
+    display: none;
 }
 
+.faq.active .faq-toggle .fa-times {
+    display: block;
+}
+
+.faq.active .faq-toggle  .fa-chevron-down {
+    color: rgb(66, 65, 62);
+       display: none;
+}
+.faq.active .faq-toggle  {
+
+}
+.faq-toggle {
+    font-size: 24px;
+    font-weight: 400 ;
+    border-radius: 50%;
+    background-color: white;
+    height: 35px;
+}
+.faq-title {
+    font-size: 24px;
+    font-weight: 400;
+}
+.faq-text {
+    font-size: 24px;
+    font-weight: 400;
+}
