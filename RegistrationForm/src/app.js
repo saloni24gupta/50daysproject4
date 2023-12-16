@@ -3,7 +3,8 @@ require("./db/conn")
 const Register = require("./models/userregister")
 const PORT = process.env.PORT || 3000;
 const app = express();
-
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 const hbs = require("hbs");
 const path = require("path")
 const static_path = path.join(__dirname, "../public");
@@ -23,9 +24,26 @@ app.get("/register", (req, res) => {
     res.render("register")
 })
 
+app.post("/register", async (req, res) => {
+    try {
+        const registerEmployee = new Register({
+            email: req.body.email,
+            password: req.body.password,
+            phone: req.body.phone,
+        })
+        const registered = await registerEmployee.save();
+        res.status(201).render("index");
+        res.send(registered);
+        res.send(registerEmployee);
+        console.log(registered)
+    }
+    catch (err) {
+        res.status(400).send(err);
+    }
+})
 
 app.listen(PORT, () => {
-    console.log(`server is running ${PORT}` )
-    
+    console.log(`server is running ${PORT}`)
+
 })
 
