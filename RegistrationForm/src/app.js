@@ -1,7 +1,9 @@
 const express = require("express");
 require("./db/conn")
+const Register = require("./models/userregister")
 const PORT = process.env.PORT || 3000;
 const app = express();
+
 const hbs = require("hbs");
 const path = require("path")
 const static_path = path.join(__dirname, "../public");

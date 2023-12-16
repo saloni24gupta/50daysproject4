@@ -36,7 +36,9 @@
             rel="stylesheet">
 
         <title>Netflix India - Watch TV Shows online, atch movies</title>
-        <style>
+       
+{{>header}}
+        {{!-- <style>
             body {
                 background-color: black;
             }
@@ -428,7 +430,7 @@
                 flex-direction: column;
                 gap: 23px;
             }
-         
+          --}}
         </style>
 
         <script>
@@ -455,7 +457,9 @@
                 <div>
                     <button class="btn">English</button>
 
-                    <button class="btn btn-red-sm">Sign In</button>
+                    <button class="btn btn-red-sm">
+                        <a href="/register">Sign In</a>
+                    </button>
                 </div>
             </nav>
             <div class="box">

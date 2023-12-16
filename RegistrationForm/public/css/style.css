@@ -13,7 +13,7 @@ body {
 }
 
 .main {
-    background-image: url("assets/bg.jpg");
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/ca6a7616-0acb-4bc5-be25-c4deef0419a7/c5af601a-6657-4531-8f82-22e629a3795e/IN-en-20231211-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(1200px, 100vw);
@@ -92,7 +92,7 @@ nav button {
 
 .btn {
     padding: 3x 8px;
- font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: rgba(248, 243, 243, 0.32);
     color: white;
     border: 1px solid white;
@@ -118,6 +118,10 @@ nav button {
     background-color: red;
     color: white;
     padding: 5px 10px;
+}
+.btn-red-sm a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .main input {
@@ -146,9 +150,9 @@ nav button {
 
 .first-sec {
     display: flex;
-    justify-content: center; 
-     max-width: 92vw;
-     height: 85vh;
+    justify-content: center;
+    max-width: 92vw;
+    height: 85vh;
     margin: auto;
     color: white;
     align-items: center;
@@ -156,8 +160,8 @@ nav button {
 
 
 .secImg {
-   position: relative;
-   z-index: 10;
+    position: relative;
+    z-index: 10;
 }
 
 .secImg img {
@@ -175,13 +179,14 @@ nav button {
     display: flex;
     flex-direction: column;
 }
+
 .heading {
-font-size: 48px;
-font-weight: bolder;
+    font-size: 48px;
+    font-weight: bolder;
 }
 
 .para {
-font-size: 24px;
+    font-size: 24px;
 }
 
 .paragraph1 {
@@ -189,7 +194,7 @@ font-size: 24px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
 .secImg1 {
@@ -202,7 +207,7 @@ font-size: 24px;
 .secImg2 {
     position: relative;
     /* height: 172vh; */
-} 
+}
 
 .secImg2 img {
     z-index: 10;
@@ -221,18 +226,20 @@ font-size: 24px;
 }
 
 .secImg3 img {
-  height: 400px;
-  width: 500px;
+    height: 400px;
+    width: 500px;
 }
 
-.first-sec  {
+.first-sec {
     height: 80vh;
     display: flex;
-    max-width: 60vw;;
+    max-width: 60vw;
+    ;
 }
+
 .four-sec {
-   height: 80vh;
-   color: white;
+    height: 80vh;
+    color: white;
 }
 
 /* faq */
@@ -249,8 +256,8 @@ font-size: 24px;
 }
 
 .faq {
-    border: 1px solid white; 
-    border-radius: 10px ;
+    border: 1px solid white;
+    border-radius: 10px;
     margin: 20px 0px;
     padding: 20px;
     position: relative;
@@ -266,7 +273,7 @@ font-size: 24px;
 
 
 .faq-title {
- margin: 0 35px 0 0;
+    margin: 0 35px 0 0;
 }
 
 .faq-text {
@@ -276,8 +283,9 @@ font-size: 24px;
 
 .faq.active .faq-text {
     display: block;
-   
+
 }
+
 .faq-toggle:focus {
     outline: 0;
 }
@@ -305,25 +313,168 @@ font-size: 24px;
     display: block;
 }
 
-.faq.active .faq-toggle  .fa-chevron-down {
+.faq.active .faq-toggle .fa-chevron-down {
     color: rgb(66, 65, 62);
-       display: none;
+    display: none;
 }
+
 /* .faq.active .faq-toggle  {
 
 } */
 .faq-toggle {
     font-size: 24px;
-    font-weight: 400 ;
+    font-weight: 400;
     border-radius: 50%;
     background-color: white;
     height: 35px;
 }
+
 .faq-title {
     font-size: 24px;
     font-weight: 400;
 }
+
 .faq-text {
     font-size: 24px;
     font-weight: 400;
 }
+
+
+.classsec h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.classsec button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.classsec {
+    padding: 50px 20px 100px 20px;
+}
+
+.classsec input {
+    padding: 9px 116px 8px 15px;
+    background-color: transparent;
+}
+
+.classsec .button {
+    padding: 31px 23px 20px 22px;
+
+}
+
+footer {
+    color: white;
+       max-width: 60vw;
+    margin: auto;
+    padding: 34px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: #ffffff;
+
+
+}
+.footer a {
+    font-size: 14x; 
+    color: #ffffff;
+}
+
+footer .question {
+ padding: 34px 0;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+/* start here */
+
+
+body {
+    background-color: black;
+  opacity: 0.65;
+  }
+  main {
+    display: flex;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/ca6a7616-0acb-4bc5-be25-c4deef0419a7/c5af601a-6657-4531-8f82-22e629a3795e/IN-en-20231211-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    background-color: rgb;
+    background-position: cover cover;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+   
+position: relative;
+  }
+
+  .container {
+   background-color: rgba(30, 30, 30, 0.5);
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 90vh;
+    width: 35vw;
+    color: white;
+    margin: auto;
+    z-index: 10;
+  }
+
+  .con-sec1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+
+    border-radius: 50px;
+
+  }
+
+  .btn input {
+    width: 30vw;
+    padding: 11px;
+    border-radius: 20px;
+    background-color: #6c5959;
+    font-size: inherit;
+    line-height: inherit;
+    color: white;
+  }
+
+  .btn input::placeholder {
+    color: wheat;
+  }
+
+  .btn-sgn {
+    background-color: red;
+    padding: 11px;
+    border-radius: 20px;
+    width: 30vw;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    outline: none;
+  }

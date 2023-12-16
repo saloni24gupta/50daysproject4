@@ -1,8 +1,196 @@
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <title>Document</title>
+
+
+</head>
+<style>
+  body {
+    background-color: black;
+  opacity: 0.65;
+  }
+  main {
+    display: flex;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/ca6a7616-0acb-4bc5-be25-c4deef0419a7/c5af601a-6657-4531-8f82-22e629a3795e/IN-en-20231211-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+
+    background-position: cover cover;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+   
+position: relative;
+  }
+
+  .container {
+   background-color: rgba(30, 30, 30, 0.5);
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 90vh;
+    width: 35vw;
+    color: white;
+    margin: auto;
+    z-index: 10;
+  }
+
+  .con-sec1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+
+    border-radius: 50px;
+
+  }
+
+  .btn input {
+    width: 30vw;
+    padding: 11px;
+    border-radius: 20px;
+    background-color: #6c5959;
+    font-size: inherit;
+    line-height: inherit;
+    color: white;
+  }
+
+  .btn input::placeholder {
+    color: wheat;
+  }
+
+  .btn-sgn {
+    background-color: red;
+    padding: 11px;
+    border-radius: 20px;
+    width: 30vw;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    outline: none;
+  }
+</style>
+
+
+<body>
+  <main>
+
+    <form action="/register" method="POST" >
+  <div class="container">
+
+    <h1>Sign In</h1>
+    <div class="con-sec1">
+      <div class="btn1 btn"> <input title="Please enter a valid email address or phone number." name="email" type="text"
+          placeholder="Email or phone number"></div>
+
+      <div class="btn2 btn"><input title="Your password must contain between 4 and 60 characters." name="password" type="password"
+          placeholder="Password"></div>
+      <button type="submit" value="Register" class="btn-sgn">Sign In</button>
+    </div>
+    <div class="paratext">
+      <input type="checkbox">
+      <span>Need help</span>
+
+
+      New to Netflix? <h4>Sign up now</h4>
+
+      <p>Sign in is protected by Google reCAPTCHA to ensure you’re not a bot.
+        <![CDATA[<b>Learn more.</b>]]>
+      </p>
+    </div>
+
+  </div>
+  </form>
+  {{!-- <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+      <d iv class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustomUsername" class="form-label">Username</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+          required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">City</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom04" class="form-label">State</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom05" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="validationCustom05" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form> --}}
+  </main>
+</body>
+
+</html>
