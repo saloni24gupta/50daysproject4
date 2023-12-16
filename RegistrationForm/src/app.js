@@ -24,9 +24,15 @@ app.get("/register", (req, res) => {
     res.render("register")
 })
 
+app.get("/login", (req, res) => {
+    res.render("login");
+})
+
 app.post("/register", async (req, res) => {
     try {
         const registerEmployee = new Register({
+            firstname: req.body.firstname,
+            lastname: req.body.lastname,
             email: req.body.email,
             password: req.body.password,
             phone: req.body.phone,
@@ -42,6 +48,20 @@ app.post("/register", async (req, res) => {
     }
 })
 
+
+//login check 
+
+app.post("/login", async  (req, res) =>{
+    try{
+
+        email: e
+    }
+
+    catch(err){
+        read.status(400).send(err)
+    }
+
+})
 app.listen(PORT, () => {
     console.log(`server is running ${PORT}`)
 

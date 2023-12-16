@@ -1,18 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
+  <style>
+    body {
+    background-color: rgb(184, 155, 155);
+  opacity: 0.65;
+  }
+  main {
+    display: flex;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/ca6a7616-0acb-4bc5-be25-c4deef0419a7/c5af601a-6657-4531-8f82-22e629a3795e/IN-en-20231211-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+
+    background-position: cover cover;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+   
+position: relative;
+  }
+
+  .container {
+   background-color: rgba(30, 30, 30, 0.5);
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 90vh;
+    width: 35vw;
+    color: white;
+    margin: auto;
+    z-index: 10;
+  }
+
+  .con-sec1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+
+    border-radius: 50px;
+
+  }
+
+  .btn input {
+    width: 30vw;
+    padding: 11px;
+    border-radius: 20px;
+    background-color: #6c5959;
+    font-size: inherit;
+    line-height: inherit;
+    color: white;
+  }
+
+  .btn input::placeholder {
+    color: wheat;
+  }
+.btn-sgn {
+    background-color: red;
+    padding: 11px;
+    border-radius: 20px;
+    width: 30vw;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    outline: none;
+  }
+    .btn  {
+margin: 20px;
+
+    }
+  </style>
+    <main>
+  <form action="/login" method="POST">
+
+    <div class="container">
+
+      <h1>LogIn</h1>
+      <div class="con-sec1">
+
+
+        <div class="btn1 btn"> <input title="Please enter a valid email address or phone number." name="email"
+            type="text" placeholder="Email or phone number"></div>
+
+        <div class="btn2 btn"><input title="Your password must contain between 4 and 60 characters." name="password"
+            type="password" placeholder="Password"></div>
+
+
+        <button type="submit" value="Register" class="btn-sgn">Sign In</button>
+      </div>
+
+
+    </div>
+  </form>
+</main>
 </body>
+
 </html>
