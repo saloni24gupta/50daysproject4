@@ -6,7 +6,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 const hbs = require("hbs");
-const path = require("path")
+const path = require("path");
+const e = require("express");
 const static_path = path.join(__dirname, "../public");
 const template_path = path.join(__dirname, "../templates/views");
 const partials_path = path.join(__dirname, "../templates/partials");
@@ -47,18 +48,27 @@ app.post("/register", async (req, res) => {
         res.status(400).send(err);
     }
 })
-
-
 //login check 
 
 app.post("/login", async  (req, res) =>{
     try{
 
-        email: e
+       const email = req.body.email;
+       const password = req.body.password;
+       console.log(`${email} and password is ${password}`)
+       const useremail = await Register.findOne({email:email})
+       
+       if(useremail.password === password){
+        res.status(201).render("index")
+
+       }
+       else {
+        res.send("email or password does't match please enter valid email")
+       }
     }
 
     catch(err){
-        read.status(400).send(err)
+        res.status(400).send(err)
     }
 
 })
