@@ -7,12 +7,11 @@ import TabButton from './components/TabButton.jsx';
 import { EXAMPLES } from './data.js';
 
 function App() {
-  let tabContent = 'Please click a button '
-
+  const [ selectedTopic, setSelectedTopic] = useState('components');
   function handleSelect(selectedButton) {
     // selectedButton => 'components', 'jsx', 'props', 'state'
-    tabContent = selectedButton;
-    console.log(tabContent);
+    setSelectedTopic(selectedButton);
+    // console.log(selectedTopic)
   }
   console.log("app component execution");
   return (
@@ -53,18 +52,24 @@ function App() {
               Components
 
             </TabButton>
-            <TabButton onSelect={() => handleSelect('JSX')} >
+            <TabButton onSelect={() => handleSelect('jsx')} >
               JSX
             </TabButton>
-            <TabButton onSelect={() => handleSelect('pROPS')} >
+            <TabButton onSelect={() => handleSelect('props')} >
               Props
             </TabButton>
-            <TabButton onSelect={() => handleSelect('State')} >
+            <TabButton onSelect={() => handleSelect('state')} >
               State
             </TabButton>
 
           </menu>
-          {tabContent}
+         <div id="tab-content">
+          <h3>{EXAMPLES[selectedTopic].title}</h3>
+          <p>{EXAMPLES[selectedTopic].description}</p>
+          <pre>
+            <code>{EXAMPLES[selectedTopic].code}</code>
+          </pre>
+         </div>
         </section>
       </main>
     </div>
