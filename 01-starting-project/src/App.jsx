@@ -7,11 +7,15 @@ import TabButton from './components/TabButton.jsx';
 import { EXAMPLES } from './data.js';
 
 function App() {
-  const [ selectedTopic, setSelectedTopic] = useState('components');
+ 
+  const [ selectedTopic, setSelectedTopic ] = useState('i am from sueState');
   function handleSelect(selectedButton) {
     // selectedButton => 'components', 'jsx', 'props', 'state'
-    setSelectedTopic(selectedButton);
+    // setSelectedTopic(selectedButton);
     // console.log(selectedTopic)
+     setSelectedTopic(selectedButton);
+    console.log(selectedTopic)
+    console.log(setSelectedTopic)
   }
   console.log("app component execution");
   return (
@@ -20,37 +24,36 @@ function App() {
       <main>
         <section id="core-concepts">
           <h2>Core Concepts</h2>
-<ul>
-  <CoreConcept 
-  tittle={CORE_CONCEPTS[0].title}
-  description={CORE_CONCEPTS[0].description}
-  image={CORE_CONCEPTS[0].image}
-  />
+          <ul>
+            <CoreConcept
+              tittle={CORE_CONCEPTS[0].title}
+              description={CORE_CONCEPTS[0].description}
+              image={CORE_CONCEPTS[0].image}
+            />
 
-<CoreConcept 
-  tittle={CORE_CONCEPTS[1].title}
-  description={CORE_CONCEPTS[1].description}
-  image={CORE_CONCEPTS[1].image}
-  />
+            <CoreConcept
+              tittle={CORE_CONCEPTS[1].title}
+              description={CORE_CONCEPTS[1].description}
+              image={CORE_CONCEPTS[1].image}
+            />
 
-<CoreConcept 
-  tittle={CORE_CONCEPTS[2].title}
-  description={CORE_CONCEPTS[2].description}
-  image={CORE_CONCEPTS[2].image}
-  />
-    <CoreConcept 
-  tittle={CORE_CONCEPTS[3].title}
-  description={CORE_CONCEPTS[3].description}
-  image={CORE_CONCEPTS[3].image}
-  />
-</ul>
+            <CoreConcept
+              tittle={CORE_CONCEPTS[2].title}
+              description={CORE_CONCEPTS[2].description}
+              image={CORE_CONCEPTS[2].image}
+            />
+            <CoreConcept
+              tittle={CORE_CONCEPTS[3].title}
+              description={CORE_CONCEPTS[3].description}
+              image={CORE_CONCEPTS[3].image}
+            />
+          </ul>
         </section>
         <section id="examples">
           <h2>Examples</h2>
           <menu>
             <TabButton onSelect={() => handleSelect('components')} >
               Components
-
             </TabButton>
             <TabButton onSelect={() => handleSelect('jsx')} >
               JSX
@@ -63,13 +66,15 @@ function App() {
             </TabButton>
 
           </menu>
-         <div id="tab-content">
+          {/* <div id="tab-content">
           <h3>{EXAMPLES[selectedTopic].title}</h3>
           <p>{EXAMPLES[selectedTopic].description}</p>
           <pre>
             <code>{EXAMPLES[selectedTopic].code}</code>
           </pre>
-         </div>
+         </div> */}
+    {selectedTopic}
+
         </section>
       </main>
     </div>
