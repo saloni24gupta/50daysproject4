@@ -8,14 +8,14 @@ import { EXAMPLES } from './data.js';
 
 function App() {
  
-  const [ selectedTopic, setSelectedTopic ] = useState('i am from sueState');
+  const [ selectedTopic, setSelectedTopic ] = useState('components');
   function handleSelect(selectedButton) {
     // selectedButton => 'components', 'jsx', 'props', 'state'
     // setSelectedTopic(selectedButton);
     // console.log(selectedTopic)
      setSelectedTopic(selectedButton);
     console.log(selectedTopic)
-    console.log(setSelectedTopic)
+    
   }
   console.log("app component execution");
   return (
@@ -66,13 +66,13 @@ function App() {
             </TabButton>
 
           </menu>
-          {/* <div id="tab-content">
+        <div id="tab-content">
           <h3>{EXAMPLES[selectedTopic].title}</h3>
           <p>{EXAMPLES[selectedTopic].description}</p>
           <pre>
             <code>{EXAMPLES[selectedTopic].code}</code>
           </pre>
-         </div> */}
+        </div>
     {selectedTopic}
 
         </section>
