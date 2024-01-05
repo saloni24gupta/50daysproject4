@@ -17,6 +17,18 @@ function App() {
     console.log(selectedTopic)
     
   }
+let tabContent = <p>Please Select a button</p>
+if(selectedTopic) {
+  tabContent = ((<div id="tab-content">
+          
+  <h3>{EXAMPLES[selectedTopic].title}</h3>
+  <p>{EXAMPLES[selectedTopic].description}</p>
+  <pre>
+    <code>{EXAMPLES[selectedTopic].code}</code>
+  </pre>
+</div>) )
+}
+
   console.log("app component execution");
   return (
     <div>
@@ -66,7 +78,11 @@ function App() {
             </TabButton>
 
           </menu>
-          {!selectedTopic && <p>Please select a topic</p>}
+
+{tabContent}
+
+
+          {/* {!selectedTopic && <p>Please select a topic</p>}
 
     {selectedTopic && (<div id="tab-content">
           
@@ -75,7 +91,7 @@ function App() {
           <pre>
             <code>{EXAMPLES[selectedTopic].code}</code>
           </pre>
-        </div>) }
+        </div>) } */}
 
         </section>
       </main>
