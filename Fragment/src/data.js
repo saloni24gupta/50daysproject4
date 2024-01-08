@@ -80,3 +80,5 @@ function Counter() {
 }`,
   },
 };
+
+export default { EXAMPLES, CORE_CONCEPTS }

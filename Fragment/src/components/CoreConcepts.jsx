@@ -1,9 +1,9 @@
 import React from 'react'
 import CoreConcept from './CoreConcept'
-import CORE_CONCEPTS from '../data.js'
+import { CORE_CONCEPTS } from '../data.js'
 function CoreConcepts() {
   return (
-    <>
+  
      <section id="core-concepts">
           <h2>Core Concepts</h2>
           <ul>
@@ -11,7 +11,7 @@ function CoreConcepts() {
               <CoreConcept key={conceptItem.title} {...conceptItem} />
             ))}
           </ul>
-        </section></>
+        </section>
   )
 }
 
