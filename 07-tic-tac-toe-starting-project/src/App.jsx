@@ -1,19 +1,11 @@
-import Player from "./components/Player"
+import React, { Component } from 'react'
 
-function App() {
-  return (
-    <main>
-      <div id="game-container">
-        <ol id="players">
-          <Player initialName="Player 1" symbol="X"/>
-          <Player initialName="Player 2" symbol="Y"/>
-        </ol>
-        GAME BOARD
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        hoio askdhaksdjkas Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quia incidunt velit voluptatum aut repellat consectetur, ipsum quam distinctio, vel quaerat facere odit atque sequi expedita nulla neque perferendis, quas debitis eveniet illo in exercitationem. Voluptatum tenetur explicabo vero, aspernatur laborum animi aliquid nostrum. Vel, et aut. Fugiat aliquam tempora quod, quae cumque tempore in possimus, a ab quasi odit architecto. Obcaecati voluptate est deleniti molestias et sint ullam voluptatum molestiae, similique facere praesentium reiciendis incidunt? Delectus consequatur illum temporibus provident! Eligendi enim repellendus officiis, dolore ea officia quibusdam, eius eaque labore culpa minima quaerat reprehenderit. Nemo, autem. Dicta facere saepe rem eos, culpa, libero vero perferendis nemo reiciendis accusamus esse ex, labore laboriosam aspernatur optio. Beatae quae ducimus vel nobis deleniti culpa nulla? Nulla excepturi temporibus alias. Dolores, at ad expedita exercitationem ut a pariatur nesciunt nobis enim delectus quo ipsum eos atque sequi eveniet illum eligendi quibusdam voluptas cupiditate architecto facilis accusantium? Inventore iure eligendi nobis blanditiis ducimus sequi nulla ex odio natus? Exercitationem saepe similique quasi, porro recusandae labore odit. Eaque aperiam ea quod vero at dolores commodi sint iure nam hic, facere placeat dicta quo, aliquid minus autem modi, optio debitis id! Repudiandae consectetur deserunt voluptates veritatis, minima animi aliquam voluptatem dolor, unde nesciunt molestiae similique optio saepe officiis assumenda, necessitatibus earum? Sed consequuntur obcaecati rerum tempora blanditiis, commodi minus, deserunt a quaerat odit ratione. Voluptatibus consectetur cum voluptatum magni accusamus ad unde illum debitis numquam, ullam amet, tempore saepe atque assumenda rerum aliquid dolorum nobis accusantium blanditiis culpa quo ratione, exercitationem aut tempora. Impedit distinctio explicabo totam numquam quis? Repudiandae, eveniet alias eum porro perspiciatis voluptatum ratione culpa soluta est molestiae, numquam quod maxime natus eos amet quos consectetur voluptates quia praesentium neque libero sit. Quaerat adipisci inventore quod, id tenetur at sapiente consequatur cumque laudantium doloremque officia natus eligendi aut culpa quos, similique modi ex sed dolores ad. Quos laboriosam quae porro vero error officia sint dolorum eligendi fugiat voluptas provident, perspiciatis alias itaque rerum reiciendis ullam a mollitia sunt, quibusdam saepe labore perferendis recusandae? In temporibus, magni laudantium, dicta expedita quaerat aliquam autem ratione quidem voluptates fugiat atque deserunt provident itaque, quis ipsam id veritatis accusantium rem aut harum. Consequuntur pariatur suscipit sit a rem ratione minima modi facere consectetur, sint nostrum saepe at ipsam accusantium, veniam hic officiis debitis inventore aspernatur incidunt labore adipisci. Itaque incidunt consequatur necessitatibus atque illo maxime earum?
       </div>
-
-      LOG
-    </main>
-  )
+    )
+  }
 }
-
-export default App

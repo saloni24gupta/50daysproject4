@@ -1,14 +1,9 @@
-import Header from './components/Header.jsx';
-// import Login from './components/Login.jsx';
-import Signup from './components/Signup.jsx';
+
 
 function App() {
   return (
     <>
-      <Header />
-      <main>
-        <Signup />
-      </main>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, consequuntur.
     </>
   );
 }
