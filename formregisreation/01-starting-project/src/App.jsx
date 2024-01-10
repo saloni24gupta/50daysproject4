@@ -1,10 +1,10 @@
-
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, consequuntur.
-    </>
+    <NavBar />
+      </>
   );
 }
 
